@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
+use Bouncer;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +25,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+      return view('home');
+    }
+
+    public function details()
+    {
+      $user = Auth::user();
+      return $user->getAbilities();
     }
 }

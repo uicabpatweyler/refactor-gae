@@ -2,29 +2,39 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Config\School;
+use App\School;
+use Auth;
+use Bouncer;
 use Illuminate\Http\Request;
+
 
 class SchoolController extends Controller
 {
+
+
+
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
+     * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function index()
     {
-        //
+      $this->authorize('index-school');
+      return view('app.escuelas.index');
     }
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
+     * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function create()
     {
-        //
+      $this->authorize('create');
+      return view('app.escuelas.create');
     }
 
     /**
@@ -41,7 +51,7 @@ class SchoolController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Config\School  $school
+     * @param  \App\School  $school
      * @return \Illuminate\Http\Response
      */
     public function show(School $school)
@@ -52,7 +62,7 @@ class SchoolController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Config\School  $school
+     * @param  \App\School  $school
      * @return \Illuminate\Http\Response
      */
     public function edit(School $school)
@@ -64,7 +74,7 @@ class SchoolController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Config\School  $school
+     * @param  \App\School  $school
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, School $school)
@@ -75,7 +85,7 @@ class SchoolController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Config\School  $school
+     * @param  \App\School  $school
      * @return \Illuminate\Http\Response
      */
     public function destroy(School $school)

@@ -41,6 +41,8 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapConfigRoutes();
 
+        $this->mapSuperAdminRoutes();
+
         //
     }
 
@@ -56,6 +58,12 @@ class RouteServiceProvider extends ServiceProvider
         ->namespace($this->namespace)
         ->prefix('/config')
         ->group(base_path('routes/config.php'));
+    }
+
+    protected function mapSuperAdminRoutes(){
+      Route::middleware(['web','auth'])
+        ->namespace($this->namespace)
+        ->group(base_path('routes/superadmin.php'));
     }
 
     /**
