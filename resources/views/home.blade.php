@@ -15,9 +15,10 @@
                     @endif
 
                     You are logged in!
-                        <a href="{{route('user-roles.index')}}">Index Roles</a>
                         <br>
-                        <a href="{{route('user-roles.create')}}">Crear roles</a>
+                    @can ('create-school')
+                        Manage schools
+                    @endcan
                 </div>
             </div>
         </div>

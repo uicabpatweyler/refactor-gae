@@ -23,11 +23,31 @@ class RoleAppController extends Controller
 
     public function show(RoleApp $roleApp){
       $this->authorize('show-role');
-      return dd($roleApp);
+      if($roleApp->name === 'superadmin' && !Auth::user()->isSuperAdmin())
+      {
+        abort(403);
+      }
+      return view('roles.show', [
+        'role' => $roleApp
+      ]);
     }
 
     public function edit(RoleApp $roleApp){
-      $this->authorize('update-role');
-      return dd($roleApp);
+      $this->authorize('edit-role');
+      if($roleApp->name === 'superadmin' && !Auth::user()->isSuperAdmin())
+      {
+        abort(403);
+      }
+      return view('roles.edit', [
+        'role' => $roleApp
+      ]);
+    }
+
+    public function update(RoleApp $roleApp, Request $request){
+      $roleApp->title = $request->get('title');
+      $roleApp->save();
+      return view('roles.show', [
+        'role' => $roleApp
+      ]);
     }
 }

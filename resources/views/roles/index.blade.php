@@ -9,7 +9,7 @@
           Roles de usuario
           @can('create-role')
           <div class="float-right">
-            <a href="{{route('user-roles.create')}}" class="btn btn-sm btn-info" role="button" aria-pressed="true">
+            <a href="{{route('user-roles.create')}}" class="btn btn-sm btn-primary" role="button" aria-pressed="true">
               Nuevo Rol de Usuario
             </a>
           </div>

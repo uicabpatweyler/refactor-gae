@@ -15,4 +15,6 @@ class RoleApp extends Role
       }
       return $query->where('name','<>','superadmin');
     }
+
+
 }

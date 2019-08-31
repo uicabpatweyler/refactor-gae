@@ -36,9 +36,9 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         @if(Auth::check())
-                            @if(Auth::user()->isA('superadmin') || Auth::user()->can('index-role'))
+                            @if(Auth::user()->isA('superadmin') )
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{route('user-roles.index')}}">Roles de Usuario</a>
+                                    <a class="nav-link" href="">Seccion del SuperAdmin</a>
                                 </li>
                             @endif
                         @endif

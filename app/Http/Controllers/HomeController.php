@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Auth;
 use Bouncer;
 use Illuminate\Http\Request;
@@ -26,6 +27,8 @@ class HomeController extends Controller
     public function index()
     {
       return view('home');
+//      $rows = User::whereIsNot('superadmin')->get();
+//      return $rows;
     }
 
     public function details()

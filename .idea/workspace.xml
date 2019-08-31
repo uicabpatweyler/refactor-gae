@@ -2,44 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="422ef630-e05e-49e4-a9e4-35bccf46601a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SuperAdmin/RoleAppController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Policies/RoleAppPolicy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/RoleApp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_08_27_225327_create_bouncer_tables.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/AbilitiesSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/AsingAbilitieToUserSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/AssignRoleUserSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/RolesSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/UsersSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/app/escuelas/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/app/escuelas/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/roles/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/roles/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/superadmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/refactor-gae.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/refactor-gae.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/TestSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/roles/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/roles/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/RoleController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SchoolController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SchoolController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Admin/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AbilityApp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Config/School.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/School.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/SchoolPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/SchoolPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SuperAdmin/RoleAppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SuperAdmin/RoleAppController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/RoleAppPolicy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/SchoolPolicy.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/RoleApp.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/RoleApp.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/roles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/roles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/superadmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/superadmin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -214,6 +191,14 @@
       <workItem from="1566941427545" duration="11341000" />
       <workItem from="1567004669254" duration="24139000" />
       <workItem from="1567089878742" duration="20033000" />
+      <workItem from="1567176495378" duration="1703000" />
+      <workItem from="1567178264599" duration="1769000" />
+      <workItem from="1567180144644" duration="1739000" />
+      <workItem from="1567181961524" duration="1552000" />
+      <workItem from="1567183843498" duration="1036000" />
+      <workItem from="1567197157205" duration="1704000" />
+      <workItem from="1567199002623" duration="161000" />
+      <workItem from="1567202022924" duration="1714000" />
     </task>
     <servers />
   </component>
